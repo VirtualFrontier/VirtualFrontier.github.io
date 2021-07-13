@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<title>The Virtual Frontier</title>
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="discordInvite.css"/>
+	<script src="discordInvite.js"></script>
 	</head>
 <body>
 <main>
-<div class="logo"><img src="res/images/logo/vf.png"></div>
+<div class="logo">
+	<img src="res/images/logo/vf.png">
+	<h1>The Virtual Frontier</h1>
+</div>
 <div class="textHelm">
 <div class="text">
-<h1>Virtual Frontier</h1>
-  <a href="https://discord.gg/T4Xj5WyZBM">Le discord</a>
   <p>Hey ! Salut toi qui cherche à faire des partenariats ! Je peux t'arrêter 2 secondes ? Laisse moi te présenter The Virtual Frontier : <br>
 <br>  
  Un serveur actif et polyvalent qui fera le bonheur de tout le monde ! Une communauté active, respectueuse et gentille ! <br>
@@ -18,7 +22,9 @@
 <br>  
  Un animé, un jeu video, ou n'importe quoi d'autre que tu détestes ou que au contraire tu adores ? Dis le nous ! Ton avis nous intéresse ! <br>
 <br>
+</p>
 <img src="res/images/minecraft/minecraft_logo_icon_168974.png">
+<p>
  Sans oublier le traditionnel gaming ! Tu préfères les jeux sur Mobile ? T'en fais pas on a ce qu'il faut ! <br>
   Tu te sens seul lors de tes longues heures de farm sur Minecraft ? On sera là pour te faire oublier la mauvaise sensation due à celles-ci ! <br>
   On joue tous ensemble sur notre serveur minecraft multiplateforme !<br>
@@ -64,9 +70,20 @@ L'équipe de The Virtual Frontier
 		</nav>
 	</nav>
 	</div>
+	<div class="textHelm">
+		<div class="text">
+			<h1>Alors qu'attends tu? Rejoins nous !</h1>
+			<div id="discordInviteBox"></div>
+		</div>
+	</div>
 	</main>
-  
-  <script type="text/javascript">		
+
+  <script type="text/javascript">	
+  discordInvite.init({
+  inviteCode: 'T4Xj5WyZBM',
+  title: 'The Virtual Frontier',
+});
+discordInvite.render();
 var diapo = document.querySelector(".diapo")
 		var elements = document.querySelector(".elements")
 		var slides = Array.from(elements.children)
