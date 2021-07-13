@@ -20,6 +20,7 @@ body{
     box-sizing: inherit;
 }
 main{
+	top: 100%;
 	position: relative;
 	left: 0;
 	width: 100%;
