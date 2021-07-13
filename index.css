@@ -1,0 +1,141 @@
+html{
+	width: 100%;
+ 	height: auto;
+ 	min-height: 100%;
+ 	margin: 0;
+	border: 0;
+}
+body{
+	width: 100%;
+ 	height: auto;
+ 	min-height: 100%;
+	border: 0;
+	margin: 0;
+	background-color: #0f0f11;
+	overflow: hidden;
+}
+header{
+	top: 0;
+	width: 100%;
+	height: 63px;
+	min-height: 63px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #2a2a2a;
+	z-index: 700;
+	transition: 1s;
+}
+*, ::after, ::before {
+    position: relative;
+    box-sizing: inherit;
+}
+main{
+	position: relative;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	min-height: calc(100% - 63px);
+}
+::-webkit-scrollbar{						
+	width: 10px;
+	height: 10px;
+	background-color: #ffffff90;
+	transition: 1s;
+}
+::-webkit-scrollbar-thumb{
+	background: #393939;
+	transition: 1s;
+}
+::selection {
+    background: #2D9CDB40;
+}
+::-moz-selection {
+    background: #2D9CDB40;
+}
+.diapo{
+	width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    font-size: 3em;
+}
+#nav-droite{
+    right: 20px;
+}
+#nav-gauche{
+    left: 20px;
+}
+.elements{
+    display: flex;
+    transition: 1s linear;
+}
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+.element > img{
+    width: 100%;
+}
+.caption{
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.rightA{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.leftA{
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.center{
+	width: 75px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0,0,0, 0.4);
+	border-radius: 50%;
+	padding: 20px;
+	padding-top: calc(25px/2 + 20px);
+	padding-bottom: calc(25px/2 + 20px);
+	transition: 1s;
+	opacity: 1;
+}
+.none{
+	opacity: 0;
+}
+.textHelm .text .diapo p{
+	text-align: center;
+	font-weight: 500;
+	font-size: 25px;
+	font-family: "arial", sans-serif;
+	color: #f2f2f2;
+}
+.textHelm .text .diapo h2{
+	text-align: center;
+	font-weight: 500;
+	font-size: 35px;
+	font-family: "arial", sans-serif;
+	color: #ffffff;
+}
