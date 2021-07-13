@@ -22,6 +22,7 @@ body{
     box-sizing: inherit;
 }
 main{
+	top: 100vh;
 	position: relative;
 	left: 0;
 	width: 100%;
@@ -43,10 +44,6 @@ main{
 }
 ::-moz-selection {
     background: #2D9CDB40;
-}
-.start{
-	width: 100%;
-	height: 100%;
 }
 .textHelm{
 	width: 100%;
