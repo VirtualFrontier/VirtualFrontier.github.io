@@ -13,6 +13,7 @@ body{
 	margin: 0;
 	background-color: #0f0f11;
 	background-image: url("res/background/background.gif");
+	background-attachment: fixed;
 }
 *, ::after, ::before {
     position: relative;
