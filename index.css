@@ -76,14 +76,14 @@ main{
 	justify-content: center;
 	align-items: center;
 }
-.textHelm .text h1{
+.textHelm .text p{
 	text-align: justify;
 	font-weight: 500;
 	font-size: 25px;
 	font-family: "arial", sans-serif;
 	color: #1B3258;
 }
-.textHelm .text p{
+.textHelm .text h1{
 	text-align: center;
 	font-weight: 700;
 	font-size: 40px;
