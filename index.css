@@ -143,9 +143,11 @@ main{
 }
 #nav-droite{
     right: 20px;
+	border-color: #ffffff;
 }
 #nav-gauche{
     left: 20px;
+	border-color: #ffffff;
 }
 .elements{
     display: flex;
