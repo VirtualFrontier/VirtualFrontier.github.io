@@ -29,6 +29,13 @@ main{
 	max-width: 100%;
 	height: auto;
 }
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 ::-webkit-scrollbar{						
 	width: 10px;
 	height: 10px;
