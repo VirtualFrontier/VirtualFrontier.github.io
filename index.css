@@ -31,10 +31,10 @@ main{
 }
 
 .logo{
+  border-radius: 50%;
   position: absolute;
-  top: 50vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50vh);
 }
 ::-webkit-scrollbar{						
 	width: 10px;
