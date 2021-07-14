@@ -234,6 +234,10 @@ main{
 	font-size: 35px;
 	font-family: "arial", sans-serif;
 	color: #ffffff;
+	text-transform: uppercase;
+	background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 :root {
