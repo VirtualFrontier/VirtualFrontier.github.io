@@ -246,6 +246,7 @@ main{
 }
 
 .shadow {
+	border-radius: 50%;
 	background-color: #ffffff;
 	display: flex;
 	justify-content: center;
@@ -255,6 +256,7 @@ main{
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
+	z-index: 998;
 }
 .shadow:before,
 .shadow:after {
@@ -267,7 +269,7 @@ main{
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
-	z-index: 998;
+	z-index: 997;
 	animation: animate 20s linear infinite;
 }
 
