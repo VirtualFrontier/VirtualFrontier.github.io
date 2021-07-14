@@ -41,6 +41,7 @@ main{
 
 .logo img{
 	border-radius: 50%;
+	z-index: 999;
 }
 
 .logo h1{
@@ -109,6 +110,11 @@ main{
 	background: linear-gradient(to right, #30CFD0 0%, #ED4245 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.textHelm .text img{
+	border-radius: 50%;
+	z-index: 999;
 }
 
 .textHelm .text .link{
@@ -259,7 +265,7 @@ main{
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
-	z-index: -1;
+	z-index: 998;
 	animation: animate 20s linear infinite;
 }
 
