@@ -114,7 +114,9 @@ main{
 
 .textHelm .text .shadow img{
 	width: 128px;
+	height: 128px;
 	border-radius: 50%;
+	background-color: #ffffff;
 	z-index: 999;
 }
 
@@ -247,7 +249,6 @@ main{
 
 .shadow {
 	border-radius: 50%;
-	background-color: #ffffff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
