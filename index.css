@@ -112,7 +112,8 @@ main{
 	-webkit-text-fill-color: transparent;
 }
 
-.textHelm .text img{
+.textHelm .text .shadow img{
+	width: 128px;
 	border-radius: 50%;
 	z-index: 999;
 }
