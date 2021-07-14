@@ -74,42 +74,43 @@
 	</div>
 <div class="textHelm ">
 <nav class="text" style="flex-direction: column;">
-	<h1>Quelques captures d'écran ...</h1>
+	<h1>Quelques captures d'écran des jeux vidéo les plus jouer du serveur ...</h1>
   <nav class="diapo">
 			            <nav class="elements">
-			                <nav class="element">
-			                    <img src="res/images/minecraft/2021-06-29_12.09.33.png">
-			                    <nav class="caption">
-			                        <h2>Le serveur minecraft et notre survie</h2>
-			                        <p>Notre magnifique portail du nether.</p>
-			                    </nav>
-			                </nav>
-			                <nav class="element">
-			                    <img src="res/images/minecraft/2021-07-04_20.29.41.png">
-			                    <nav class="caption">
-			                        <h2>Le serveur minecraft et notre survie</h2>
-			                        <p>L'instant photo de Darki (un de nos meilleurs admins)</p>
-			                    </nav>
-			                </nav>
 							<nav class="element">
-			                    <img src="res/images/minecraft/2021-07-13_17.52.47.png">
+			                    <img src="res/images/screen/2.jpg">
 			                    <nav class="caption">
-			                        <h2>Le serveur minecraft en créatif !!!</h2>
-			                        <p>Le temple des cochons</p>
+			                        <h2>Fortnite Battle Royale</h2>
+			                        <p>Avec tout ces gros events !!</p>
 			                    </nav>
-			                </nav>
+			                </nav>		                		                
 							<nav class="element">
-			                    <img src="res/images/minecraft/2021-07-13_17.45.14.png">
+			                    <img src="res/images/screen/1.jpg">
 			                    <nav class="caption">
-			                        <h2>Le serveur minecraft et notre créatif</h2>
-			                        <p>La maison privée de 22h22 (un de nos modo)</p>
+			                        <h2>Pokemon bouclier !</h2>
+			                        <p>La partie de Darki !</p>
 			                    </nav>
 			                </nav>			                
+							
 							<nav class="element">
 			                    <img src="res/images/minecraft/2021-07-13_17.47.47.png">
 			                    <nav class="caption">
-			                        <h2>La suite des instants photo de Edpims</h2>
-			                        <p>Edpims le creeper !!</p>
+			                        <h2>Les instants photo de Edpims</h2>
+			                        <p>Edpims le creeper !!!</p>
+			                    </nav>
+			                </nav>				                
+							<nav class="element">
+			                    <img src="res/images/screen/3.jpg">
+			                    <nav class="caption">
+			                        <h2>Undertale</h2>
+			                        <p>Pour les gens tryhard</p>
+			                    </nav>
+			                </nav>			                
+							<nav class="element">
+			                    <img src="res/images/screen/4.jpg">
+			                    <nav class="caption">
+			                        <h2>Mario</h2>
+			                        <p>Certain de nos membres aiment le noir et blanc</p>
 			                    </nav>
 			                </nav>			                
 			        	</nav>
@@ -180,9 +181,8 @@ var diapo = document.querySelector(".diapo")
 		var timerOK = true
 
 		slideWidth = diapo.getBoundingClientRect().width
-		diapo.addEventListener("click", reverse)
-		next.addEventListener("click", function(){slideNext(); reverse();})
-		prev.addEventListener("click", function(){slidePrev(); reverse();})
+		next.addEventListener("click", function(){slideNext();})
+		prev.addEventListener("click", function(){slidePrev();})
 		timer = setInterval(slideNext, timeperslide)
 
 		function slideNext(){			
