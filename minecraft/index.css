@@ -1,0 +1,30 @@
+.minecraft .shadow img{
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(0deg, #000, #262626);
+}
+.minecraft .shadow:before, .shadow:after{
+    border-radius: 15px;
+}
+
+.minecraft iframe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+
+.minecraft .text .shadow{
+    margin-top: 50px;    
+}
+
+.minecraft .text .shadow img{
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+    padding: 0px;
+    background:#00000000;
+}
+.minecraft .text .shadow:before, .shadow:after{
+    border-radius: 15px;
+}
