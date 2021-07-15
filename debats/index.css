@@ -1,0 +1,32 @@
+.logo .shadow:before, .shadow:after{
+    border-radius: 50%;
+}
+
+.text .pp .shadow:before, .shadow:after{
+    border-radius: 50%;
+}
+
+.gamers .text .pp .shadow img{
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.shadow:before, .shadow:after{
+    border-radius: 15px;
+}
+
+.gamers .text .shadow{
+    margin-top: 50px;   
+    width: 100%; 
+}
+
+.gamers .text .shadow img{
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+    padding: 0px;
+    background:#00000000;
+}
+.text .shadow:before, .shadow:after{
+    border-radius: 15px;
+}

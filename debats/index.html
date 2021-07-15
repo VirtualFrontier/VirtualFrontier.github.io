@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>The Virtual Frontier</title>
+	<link rel="stylesheet" href="../index.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="shortcut icon" href="../res/images/logo/vfradius.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Virtual Frontier X Minecraft est un serveur minecraft de la communauté de Virtual Frontier, il vous permet de vous connecter sur n'importe quelle plateforme et de jouer avec vos amis et notre communauté"/>
+	<html lang="fr-fr">
+	<meta property="og:image" content="https://virtualfrontier.github.io/res/images/logo/vfradius.png">
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="300" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:image:alt" content="Keep Konect Logo" />
+	<meta property="og:title" content="Keep Konect">
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://virtualfrontier.github.io/"/>
+	<meta property="og:description" content="Voici les différents débats" />
+	<meta name="google-site-verification" content="p11DYNLjlmDi2t5F5R2KZlvY5Mc2pVyaRofzut5i-Hs" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>      
+    <body>
+        <main class="gamers">
+            <div class="logo">	
+                <div class="shadow">
+                    <img src="../res/images/logo/vf.png">
+                </div>
+                <h1>The Virtual Frontier X Gamers</h1>
+            </div>
+            <div class="textHelm">
+                <div class="text">
+                    <h1>Les captures d'écrans Minecraft :</h1>
+
+                    <div class="shadow">
+                        <img data-enlargable src="../res/images/screen/Gamer/1.png">
+                    </div>
+                    <div class="shadow">
+                        <img data-enlargable src="../res/images/screen/Gamer/2.png">
+                    </div>
+                    <div class="shadow">
+                        <img data-enlargable src="../res/images/screen/Gamer/3.png">
+                    </div>
+                    <div class="shadow">
+                        <img data-enlargable src="../res/images/screen/Gamer/5.png">
+                    </div>
+                </div>
+            </div>
+            <div class="textHelm">
+                <div class="text">
+                    <h1>Les captures d'écrans Zelda :</h1>
+
+                    <div class="shadow">
+                        <img data-enlargable src="../res/images/screen/Gamer/4.jpg">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body> 
+    
+    <script>
+        $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+        var src = $(this).attr('src');
+        $('<div>').css({
+            background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+            backgroundSize: 'contain',
+            width:'100%', height:'100%',
+            position:'fixed',
+            zIndex:'10000',
+            top:'0', left:'0',
+        }).click(function(){
+            $(this).remove();
+        }).appendTo('body');
+    });
+    </script>
+</html>
