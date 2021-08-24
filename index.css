@@ -18,9 +18,92 @@ body{
 	background-size: cover;
 }
 *, ::after, ::before {
+	margin: 0;
+	padding: 0;
     position: relative;
     box-sizing: inherit;
 }
+
+header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 15vh;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+.titles{
+	width: 30%;
+	display: flex;
+	align-items: center;
+	font-family: 'Zen Tokyo Zoo', Roboto, Ubuntu, sans-serif;
+	font-size: 1.5em;
+}
+
+.titles img{
+	width: 75px;
+	height: auto;
+	margin: 10px;
+}
+
+header nav{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	font-family: Montserrat, Roboto, Ubuntu, sans-serif;
+	font-size: 1.2em;
+}
+
+header nav ul{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+header nav li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width:25%;
+	height: 100%;
+}
+
+header nav a{
+	color: black;
+	text-decoration: none;
+	position: relative;
+}
+
+header nav li a::after{
+	content: "";
+	transition: all 0.3s;
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+	width: 100%;
+	transform: scaleX(0%);
+	height: 3px;
+	transform-origin: left;
+	background-color: #ae1212;
+}
+
+header nav li:hover a{
+	color: #ae1212;
+	text-shadow: #911212 0px 0px 5px;
+}
+
+header nav li:hover a::after{
+	transform-origin: right;
+	transform: scaleX(100%);
+}
+
 main{
 	top: 100vh;
 	position: relative;
